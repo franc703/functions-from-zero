@@ -5,3 +5,6 @@ pytest
 pytest-cov
 wikipedia
 fire
+fastapi
+pydantic
+uvicorn[standard]
