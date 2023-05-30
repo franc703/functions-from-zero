@@ -3,12 +3,12 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv power_analysis/test_*.py
+	python -m pytest -vv test_*.py
 
 format:
-	black power_analysis/*.py
+	black *.py
 
 lint:
-	find power_analysis/ -name "*.py" | xargs pylint --disable=R,C
+	pylint --disable=R,C *.py
 
 all: install lint test
